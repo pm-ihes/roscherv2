@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'ngx-toastr/toastr';
+
+:root {
+    --red: #e30713;
+    --gray: #d9d9d9;
+    --blue: #24415c;
+    --blue2: #6c7794;
+    --green: #55a630;
+    --bg: #fff;
+    --accent: #00a8ff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #cbd5e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d3748;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins !important;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.pattern {
+    background-image: radial-gradient(#24415c 0.8px, transparent 0.8px), radial-gradient(#24415c 0.8px, #e5e5f7 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.text-sm {
+    font-size: 1.25rem;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+
+.heading-sm {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+button:focus,
+button:hover {
+    color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+button:after {
+    content: '';
+    pointer-events: none;
+    bottom: -2px;
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+@media (max-width: 1500px) {
+    .text {
+        font-size: 1.25rem;
+    }
+
+    .text-sm {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 2.75rem;
+    }
+
+    .heading_sm {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .text {
+        font-size: 1rem;
+    }
+
+    .text-sm {
+        font-size: 0.75rem;
+    }
+
+    .heading {
+        font-size: 2.25rem;
+    }
+
+    .heading_sm {
+        font-size: 1.25rem;
+    }
+}
