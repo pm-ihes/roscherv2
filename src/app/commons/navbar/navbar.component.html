@@ -1,0 +1,41 @@
+<div class="w-screen h-20 shadow-md z-10 ease-in duration-300 px-8 bg-white">
+
+    <div class="w-full h-full flex justify-between items-center relative">
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="absolute right-0">
+            <div class="tham tham-e-squeeze tham-w-6" (click)="onMenuOpen($event)">
+                <div class="tham-box">
+                  <div class="tham-inner bg-[var(--red)]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<div
+        id="menu"
+        [ngClass]="isMenuOpen ? 'bg-[var(--blue)]' : 'bg-slate-700/10'"
+        class="absolute top-[5rem] -mt-1 h-0 w-full z-10 ease-in duration-300 nav_sm:block overflow-hidden">
+        <div class="w-full py-1 text-center">
+            <a class="text-white text-xl" routerLink="home">Willkommen</a>
+        </div>
+        <div class="w-full py-1 text-center">
+            <a class="text-white text-xl" routerLink="leistungen">Leistungen</a>
+        </div>
+        <div class="w-full py-1 text-center">
+            <a href="" class="text-white text-xl" routerLink="unternehmen">Unternehmen</a>
+        </div>
+        <div class="w-full py-1 text-center">
+            <a href="" class="text-white text-xl" routerLink="karriere">Karriere</a>
+        </div>
+        <div class="w-full py-1 text-center">
+            <a class="text-[var(--red)] text-xl font-semibold uppercase" routerLink="kontakt">Kontakt</a>
+        </div>
+    </div>
