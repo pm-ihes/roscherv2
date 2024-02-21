@@ -7,6 +7,8 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { NavbarComponent } from './commons/navbar/navbar.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { LoadingIndicatorComponent } from './commons/loading-indicator/loading-indicator.component';
+import { HomeComponent } from './components/home/home.component';
+import { CareerComponent } from './components/career/career.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { LoadingIndicatorComponent } from './commons/loading-indicator/loading-i
     FooterComponent,
     NavbarComponent,
     NotFoundComponent,
-    LoadingIndicatorComponent
+    LoadingIndicatorComponent,
+    HomeComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,
