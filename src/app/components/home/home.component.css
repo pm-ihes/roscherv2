@@ -1,3 +1,17 @@
-.inclined-box{
+.inclined-box-top{
     clip-path:polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.inclined-box-btm{
+    clip-path:polygon(0 0, 80% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 1000px) {
+    .inclined-box-top{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .inclined-box-btm{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }

@@ -9,6 +9,7 @@ import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { LoadingIndicatorComponent } from './commons/loading-indicator/loading-indicator.component';
 import { HomeComponent } from './components/home/home.component';
 import { CareerComponent } from './components/career/career.component';
+import { CountUpModule } from 'ngx-countup';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CareerComponent } from './components/career/career.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
