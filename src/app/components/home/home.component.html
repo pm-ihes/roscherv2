@@ -97,8 +97,8 @@
                 <div class="text-white -md:pt-10 pl-10">
                     <h1 class="heading-xs">Weitere Leistungen:</h1>
                 </div>
-                <div class="py-10 pl-10">
-                    <ul class="list-outside list-disc text text-white">
+                <div class="py-10 pl-10 -md:pr-10">
+                    <ul class="list-inside list-disc text text-white">
                         <li>persönliche, kompetente Beratung vor Ort oder in unseren Geschäftsräumen</li>
                         <li>detaillierte, kreative Planung und Angebotserstellung</li>
                         <li>termingerechte, individuelle Ausführung der Leistungen</li>
@@ -152,13 +152,15 @@
                 <div class="-md:pt-10">
                     <img src="assets/icons/customer_white.png" alt="" class="w-28 h-28 mx-auto" />
                 </div>
-                <div class="text-left py-10 pl-10">
-                    <p class="text text-white">
-                        Die Roscher GmbH betreut gewerbliche und private Kunden bei der Planung und Realisierung Ihrer
-                        Projekte. Zudem bieten wir - über die Installation hinaus - Wartungsarbeiten an, welche in der Regel
-                        zu einer erhöhten Lebenszeit der installierten Produkte führt und im Interesse aller liegt.
-                        Selbstverständlich sind wir auch für Sie da, sobald eine Reparatur anfällt.
-                    </p>
+                <div class="text-left py-10 pl-10 -md:pr-10">
+                    <ul class="list-inside list-disc text text-white">
+                        <li>sorgfältig</li>
+                        <li>freundlich</li>
+                        <li>kompetent</li>
+                        <li>zuverlässig</li>
+                        <li>höchste Qualität</li>
+                        <li class="text-[var(--red)]">Retter in der Not</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -224,35 +226,11 @@
 </div>
 
 <!-- Stellen -->
-<div class="w-screen bg-[var(--gray)] py-10">
-    <div
-        class="bg-white mx-auto shadow-gray-100 w-full max-w-4xl flex flex-col sm:flex-row gap-3 sm:items-center justify-between px-5 py-4 mb-5 rounded-md">
-        <div>
-            <h3 class="text font-bold mt-px">Servicetechniker SHK</h3>
-            <div class="flex items-center gap-3 mt-2">
-                <span class="bg-blue-100 text-[var(--accent)] rounded-full px-3 py-1 text-sm">Vollzeit</span>
-                <span class="text-slate-600 text-sm flex gap-1 items-center">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    Hainichen, Sachsen
-                </span>
-            </div>
-        </div>
-        <div>
-            <button routerLink="/karriere" class="btn-red">
-                <a class="btn-underline">Bewerben →</a>
-            </button>
-        </div>
-    </div>
+<div class="w-screen bg-[var(--gray)] py-10 px-10">
+    <p class="heading-xs text-black pb-10 text-center">Wir stellen ein:</p>
+    <app-offer-item title="Installateur für Sanitär-, Heizungs- und Klimatechnik"></app-offer-item>
+    <app-offer-item title="Kundendienstmonteur für Heizsysteme"></app-offer-item>
+
+    <p class="heading-xs text-black py-10 text-center">Wir bilden aus:</p>
+    <app-offer-item title="Installateur für Sanitär-, Heizungs- und Klimatechnik"></app-offer-item>
 </div>

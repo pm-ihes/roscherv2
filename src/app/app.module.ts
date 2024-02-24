@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CareerComponent } from './components/career/career.component';
 import { CountUpModule } from 'ngx-countup';
 import { ServiceItemComponent } from './components/home/service-item/service-item.component';
+import { OfferItemComponent } from './commons/components/offer-item/offer-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServiceItemComponent } from './components/home/service-item/service-ite
     LoadingIndicatorComponent,
     HomeComponent,
     CareerComponent,
-    ServiceItemComponent
+    ServiceItemComponent,
+    OfferItemComponent
   ],
   imports: [
     BrowserModule,
