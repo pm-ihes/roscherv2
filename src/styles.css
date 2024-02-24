@@ -50,7 +50,7 @@ body {
 }
 
 .text {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .text-sm {
@@ -110,7 +110,7 @@ button:hover .btn-underline {
 
 @media (max-width: 1500px) {
     .text {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .text-sm {

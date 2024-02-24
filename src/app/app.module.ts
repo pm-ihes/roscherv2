@@ -10,6 +10,7 @@ import { LoadingIndicatorComponent } from './commons/loading-indicator/loading-i
 import { HomeComponent } from './components/home/home.component';
 import { CareerComponent } from './components/career/career.component';
 import { CountUpModule } from 'ngx-countup';
+import { ServiceItemComponent } from './components/home/service-item/service-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CountUpModule } from 'ngx-countup';
     NotFoundComponent,
     LoadingIndicatorComponent,
     HomeComponent,
-    CareerComponent
+    CareerComponent,
+    ServiceItemComponent
   ],
   imports: [
     BrowserModule,
