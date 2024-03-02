@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { CONTACT_URL } from 'src/app/constants/meta.constant';
 
 @Component({
     selector: 'app-navbar',
@@ -8,6 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
     isMenuOpen = false;
+    contactUrl: string = CONTACT_URL;
 
     constructor(private router: Router) {}
 
