@@ -1,0 +1,32 @@
+.active .pointer {
+    background: var(--red) !important;
+}
+
+.eventBox li {
+    list-style-type: none;
+}
+
+.active p,
+.active li {
+    transform: scale(1.05, 1.15);
+}
+
+.active p {
+    color: var(--red);
+}
+
+.eventBox p,
+.eventBox li {
+    transition: ease-in 500ms;
+}
+
+.eventBox:last-child .strahl {
+    border-left: 2px solid;
+    border-image: linear-gradient(
+            180deg,
+            rgba(255, 87, 87, 1) 0%,
+            rgba(255, 87, 87, 1) 30%,
+            rgba(255, 87, 87, 0.1685267857142857) 100%
+        )
+        1;
+}

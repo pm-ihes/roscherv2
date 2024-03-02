@@ -54,8 +54,13 @@ body {
 }
 
 .text-sm {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
+
+.text-xs {
+    font-size: 1.5rem;
+}
+
 
 .heading {
     font-weight: 900;
@@ -64,13 +69,18 @@ body {
 }
 
 .heading-sm {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 3.5rem;
 }
 
 .heading-xs {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 3rem;
+}
+
+.heading-mini {
+    font-weight: 900;
+    font-size: 2rem;
 }
 
 /* Button with underline effect */
@@ -110,11 +120,15 @@ button:hover .btn-underline {
 
 @media (max-width: 1500px) {
     .text {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .text-sm {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .text-xs {
+        font-size: 1.25rem;
     }
 
     .heading {
@@ -128,17 +142,25 @@ button:hover .btn-underline {
     .heading-xs {
         font-size: 2.5rem;
     }
+
+    .heading-mini {
+        font-size: 1.75rem;
+    }
 }
 
 @media (max-width: 700px) {
     .text {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .text-sm {
-        font-size: 0.75rem;
+        font-size: 1.25rem;
     }
 
+    .text-sm {
+        font-size: 1rem;
+    }
+    
     .heading {
         font-size: 3rem;
     }
@@ -149,5 +171,9 @@ button:hover .btn-underline {
 
     .heading-xs {
         font-size: 2rem;
+    }
+
+    .heading-mini {
+        font-size: 1.5rem;
     }
 }

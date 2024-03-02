@@ -12,6 +12,7 @@ import { CareerComponent } from './components/career/career.component';
 import { CountUpModule } from 'ngx-countup';
 import { ServiceItemComponent } from './components/home/service-item/service-item.component';
 import { OfferItemComponent } from './commons/components/offer-item/offer-item.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OfferItemComponent } from './commons/components/offer-item/offer-item.c
     HomeComponent,
     CareerComponent,
     ServiceItemComponent,
-    OfferItemComponent
+    OfferItemComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
