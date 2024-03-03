@@ -13,6 +13,7 @@ import { CountUpModule } from 'ngx-countup';
 import { ServiceItemComponent } from './components/home/service-item/service-item.component';
 import { OfferItemComponent } from './commons/components/offer-item/offer-item.component';
 import { AboutComponent } from './components/about/about.component';
+import { ApplicationItemComponent } from './components/career/application-item/application-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AboutComponent } from './components/about/about.component';
     CareerComponent,
     ServiceItemComponent,
     OfferItemComponent,
-    AboutComponent
+    AboutComponent,
+    ApplicationItemComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,13 @@ import Aos from 'aos';
     styleUrls: ['./career.component.css']
 })
 export class CareerComponent {
+    overviewOpen = [false, false, false];
+
     ngAfterViewInit() {
         Aos.init();
+    }
+
+    toggleOverview(index: number) {
+        this.overviewOpen[index] = !this.overviewOpen[index];
     }
 }
