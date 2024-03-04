@@ -2,9 +2,9 @@ import { Component, ElementRef, HostListener, QueryList, Renderer2, ViewChild, V
 import { HistoryItems } from 'src/app/constants/historie.constant';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
     @ViewChildren('section')
@@ -18,25 +18,22 @@ export class AboutComponent {
 
     items = HistoryItems;
     firstOffset?: number;
+    offset: number = 0;
 
     constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
     ngAfterViewInit() {
-        this.firstOffset = this.sections?.first.nativeElement.getBoundingClientRect().top - window.innerHeight * 0.7;
         this.setActiveSection();
     }
 
     @HostListener('window:scroll', ['$event']) // for window scroll events
     onScroll() {
-        if (this.topDiv?.nativeElement.getBoundingClientRect().top === 0) {
-            this.firstOffset = this.sections?.first.nativeElement.getBoundingClientRect().top - window.innerHeight * 0.7;
-        }
         this.setActiveSection();
     }
 
     setActiveSection() {
         const filteredSection = this.sections?.filter((section) => {
-            return section.nativeElement.getBoundingClientRect().top > (this.firstOffset ?? 100);
+            return section.nativeElement.getBoundingClientRect().top > (window.innerHeight * 0.4);
         });
 
         this.sections?.forEach((section) => {

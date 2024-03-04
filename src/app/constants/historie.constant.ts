@@ -61,7 +61,7 @@ export const HistoryItems: { year: string; title: string; texts: string[] }[] = 
     },
     {
         year: '1984 - 1991',
-        title: 'Unternehmensnachfolge gesichert',
+        title: 'Nachfolge gesichert',
         texts: [
             '→ 1984: Sohn Uwe Roscher steigt nach seiner Ausbildung als Klempner und Installateur in das familiengeführte Unternehmen ein',
             '→ 1986: erfolgreicher Abschluss der Meisterprüfung',

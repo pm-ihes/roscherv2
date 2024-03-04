@@ -9,11 +9,11 @@
     <img src="assets/images/about_top.png" alt="Bild Roscher GmbH Hainichen" class="h-full w-full object-cover blur-sm" />
     <div class="absolute top-0 left-0 w-full h-full bg-gray-800/40"></div>
     <div class="absolute md:top-1/4 -md:top-[10%] left-[10vw] w-[80vw] text-center">
-        <h2 class="heading-xs text-white">
+        <h2 class="heading-xs -sm:text-xl text-white">
             “[...] Eigentlich gibt es die Firma Roscher in Hainichen sogar schon fast 220 Jahre. Damit dürfte es sich um die
             älteste durchgängig bestehende Firma in unserer Stadt überhaupt handeln. [...]"
         </h2>
-        <p class="text text-white">~ Oberbürgermeister Dieter Greysinger, 2022 ~</p>
+        <p class="text -sm:text-lg text-white">~ Oberbürgermeister Dieter Greysinger, 2022 ~</p>
     </div>
 </div>
 
@@ -40,8 +40,8 @@
                     class="pointer absolute top-1/2 left-0 -translate-x-[calc(50%+1px)] -translate-y-1/2 rounded-full h-5 w-5 bg-white border-2 border-red-600"></div>
                 <div class="-sm:w-[80%] sm:w-[90%]">
                     <div class="sm:pr-4">
-                        <p class="heading-mini">{{ item.title }}</p>
-                        <li *ngFor="let text of item.texts" class="text-xl -sm:text-sm">{{ text }}</li>
+                        <p class="heading-mini -sm:leading-6 -sm:pb-2">{{ item.title }}</p>
+                        <li *ngFor="let text of item.texts" class="text-xl -sm:text-sm -sm:leading-4 -sm:pb-2">{{ text }}</li>
                     </div>
                 </div>
             </div>
