@@ -14,6 +14,9 @@ import { ServiceItemComponent } from './components/home/service-item/service-ite
 import { OfferItemComponent } from './commons/components/offer-item/offer-item.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApplicationItemComponent } from './components/career/application-item/application-item.component';
+import { Job1Component } from './components/career/job-1/job-1.component';
+import { Job2Component } from './components/career/job-2/job-2.component';
+import { Job3Component } from './components/career/job-3/job-3.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ApplicationItemComponent } from './components/career/application-item/a
     ServiceItemComponent,
     OfferItemComponent,
     AboutComponent,
-    ApplicationItemComponent
+    ApplicationItemComponent,
+    Job1Component,
+    Job2Component,
+    Job3Component
   ],
   imports: [
     BrowserModule,
