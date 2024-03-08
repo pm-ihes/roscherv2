@@ -11,12 +11,17 @@
     transform: scale(1.05, 1.15);
 }
 
+.active img {
+    transform: translateX(-2%);
+}
+
 .active p {
     color: var(--red);
 }
 
 .eventBox p,
-.eventBox li {
+.eventBox li,
+.eventBox img{
     transition: ease-in 500ms;
 }
 

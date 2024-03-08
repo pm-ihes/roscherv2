@@ -33,7 +33,7 @@
             <h1
                 class="text-6xl font-extrabold text-[var(--red)] text-center pt-8"
                 [countUp]="5.7"
-                [options]="{ enableScrollSpy: true, suffix: ' Mio.', decimalPlaces: 1 }">
+                [options]="{ enableScrollSpy: true, suffix: ' Mio.', decimalPlaces: 1, decimal: ',' }">
                 0
             </h1>
             <p class="text-3xl text-white text-center pt-2">...Menschen arbeiten im Handwerk in Deutschland.</p>
@@ -58,7 +58,7 @@
             <h1
                 class="text-6xl font-extrabold text-[var(--red)] text-center pt-8"
                 [countUp]="1.2"
-                [options]="{ enableScrollSpy: true, suffix: '%', decimalPlaces: 1 }">
+                [options]="{ enableScrollSpy: true, suffix: '%', decimalPlaces: 1, decimal: ',' }">
                 0
             </h1>
             <p class="text-3xl text-white text-center pt-2">...der Handwerker sind derzeit arbeitssuchend.</p>

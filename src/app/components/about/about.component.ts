@@ -33,7 +33,7 @@ export class AboutComponent {
 
     setActiveSection() {
         const filteredSection = this.sections?.filter((section) => {
-            return section.nativeElement.getBoundingClientRect().top > (window.innerHeight * 0.4);
+            return section.nativeElement.getBoundingClientRect().bottom > (window.innerHeight * 0.4);
         });
 
         this.sections?.forEach((section) => {
