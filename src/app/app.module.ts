@@ -17,6 +17,8 @@ import { ApplicationItemComponent } from './components/career/application-item/a
 import { Job1Component } from './components/career/job-1/job-1.component';
 import { Job2Component } from './components/career/job-2/job-2.component';
 import { Job3Component } from './components/career/job-3/job-3.component';
+import { ImprintComponent } from './commons/imprint/imprint.component';
+import { PrivacyComponent } from './commons/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { Job3Component } from './components/career/job-3/job-3.component';
     ApplicationItemComponent,
     Job1Component,
     Job2Component,
-    Job3Component
+    Job3Component,
+    ImprintComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
