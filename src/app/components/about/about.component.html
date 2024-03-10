@@ -42,7 +42,7 @@
                     <div class="sm:pr-4">
                         <p class="heading-mini -sm:leading-6 -sm:pb-2">{{ item.title }}</p>
                         <li *ngFor="let text of item.texts" class="text-xl -sm:text-sm -sm:leading-4 -sm:pb-2">{{ text }}</li>
-                        <img src="assets/images/karriere_top.jpg" alt="" class="sm:w-1/2 pt-5 ">
+                        <img *ngIf="item.imgSrc" [src]="item.imgSrc" alt="" class="sm:w-1/2 pt-5 ">
                     </div>
                 </div>
             </div>
