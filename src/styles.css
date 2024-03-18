@@ -83,7 +83,7 @@ body {
     font-size: 2rem;
 }
 
-/* Button with underline effect */
+/* Button with white underline effect */
 .btn-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
@@ -93,7 +93,17 @@ body {
     transition: background-size .4s ease-in-out;
 }
 
-button:hover .btn-underline {
+/* Button with black underline effect */
+.btn-underline-black {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000);
+    background-size: 0 3px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .4s ease-in-out;
+}
+
+button:hover .btn-underline, button:hover .btn-underline-black {
     background-size: 100% 3px;
     background-position: 0% 100%
 }
@@ -110,6 +120,26 @@ button:hover .btn-underline {
     cursor: pointer;
     border: none;
     background: var(--red);
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.btn-white:hover{
+    color: black;
+}
+
+.btn-white {
+    font-size: 18px;
+    color: rgb(64, 62, 62);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    border: 2px solid black;
+    background: white;
     text-transform: uppercase;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;

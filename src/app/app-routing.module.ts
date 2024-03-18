@@ -7,6 +7,7 @@ import { CareerComponent } from './components/career/career.component';
 import { AboutComponent } from './components/about/about.component';
 import { ImprintComponent } from './commons/imprint/imprint.component';
 import { PrivacyComponent } from './commons/privacy/privacy.component';
+import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'about', component: AboutComponent, canActivate: [scrollGuard]},
     { path: 'impressum', component: ImprintComponent, canActivate: [scrollGuard] },
     { path: 'datenschutz', component: PrivacyComponent, canActivate: [scrollGuard] },
+    { path: 'leistungen', component: ServicesComponent, canActivate: [scrollGuard] },
 
     { path: '404', component: NotFoundComponent, canActivate: [scrollGuard] },
     { path: '**', component: NotFoundComponent, canActivate: [scrollGuard] }
