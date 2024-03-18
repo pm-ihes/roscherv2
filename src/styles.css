@@ -114,6 +114,8 @@ button:hover .btn-underline, button:hover .btn-underline-black {
 
 .btn-red {
     font-size: 18px;
+    height: 43px;
+    width: 150px;
     color: #e1e1e1;
     font-family: inherit;
     font-weight: 800;
