@@ -1,1 +1,22 @@
 @import '../services.component.css';
+
+.card {
+    width: 180px;
+    height: 100%;
+    transition: ease-in 300ms;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.active {
+    width: 250px;
+}
+
+.card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.active .menu {
+    height: 40% !important;
+}

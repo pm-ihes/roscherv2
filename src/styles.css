@@ -34,13 +34,16 @@
     background: #718096;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'San Francisco';
     overflow-x: hidden;
     height: 100%;
     width: 100vw;
-    scroll-behavior: smooth;
 }
 
 .pattern {

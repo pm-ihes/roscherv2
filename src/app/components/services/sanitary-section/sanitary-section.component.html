@@ -73,7 +73,8 @@
     <img src="assets/images/sanitary_bath_top.png" alt="Bild Bad" class="w-screen h-[70vh] object-cover" />
 </div>
 
-<div class="bg-[var(--gray)] p-10 -sm:p-5">
+<!--Section Bad-->
+<div class="bg-[var(--gray)] py-5 px-10 -sm:p-5">
     <div class="text-center pb-5">
         <h1 class="heading-xs">Bad</h1>
         <p class="text-xl font-extrabold">Alles aus einer Meisterhand</p>
@@ -81,5 +82,47 @@
             Wir erschaffen Ihnen einen Sanitärbereich von der Abdichtung, der Verfugung, Installation der Sanitärelemente über Bodenheizung bis hin
             zum fertig gefliesten Bad. Alles aus einer Meisterhand!
         </p>
+    </div>
+</div>
+
+<!--Sanitäranalgen Slider-->
+<div class="bg-[var(--gray)] py-5 px-10 -sm:p-5">
+    <div class="text-center pb-5">
+        <h1 class="heading-xs">Sanitäranlagen</h1>
+    </div>
+    <div *ngIf="!isMobile" class="w-full sm:h-96 sm:flex justify-center gap-4">
+        <div *ngFor="let card of cards; index as i" class="card relative" (mouseenter)="addActive($event)">
+            <img [src]="card.image" alt="">
+            <div class="absolute bottom-0 bg-[var(--dark-gray)] w-full h-10 z-10 ease-in duration-300" [ngClass]="{'menu': menuOpened[i]}">
+                <div class="tham tham-e-squeeze tham-w-6 mx-auto pt-4" (click)="toggleMenu($event, i)">
+                    <div class="tham-box">
+                      <div class="tham-inner bg-white"></div>
+                    </div>
+                </div>
+                <div class="h-full text-center text-white flex flex-col justify-center">
+                    <ul *ngIf="menuOpened[i]" class="">
+                        <li *ngFor="let note of card.notes; index as i">{{card.notes[i]}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div *ngIf="isMobile" class="w-full flex flex-col">
+        <div *ngFor="let card of cards; index as i" class="aos-animate aos-init w-[90%] mx-auto mb-6" data-aos="fade-up" data-aos-duration="1000">
+            <img [src]="card.image" alt="" class="rounded-t-xl h-[400px] w-full object-cover">
+            <div class="bg-[var(--dark-gray)] w-full z-10 ease-in duration-300">
+                <ul class="text-center text-white py-4">
+                    <li *ngFor="let note of card.notes; index as i">{{card.notes[i]}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Barrierefreies Bad-->
+<div class="bg-[var(--gray)] py-5 px-10 -sm:p-5">
+    <div class="text-center pb-5">
+        <h1 class="heading-xs">Barrierefreies Bad</h1>
     </div>
 </div>

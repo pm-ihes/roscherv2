@@ -14,4 +14,7 @@ export class ServiceItemComponent {
 
     @Input()
     link: string = '';
+
+    @Input()
+    fragment: string = '';
 }
