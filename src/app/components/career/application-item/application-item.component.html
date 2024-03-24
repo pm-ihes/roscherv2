@@ -34,10 +34,15 @@
                 <div class="w-2">{{ overviewOpen ? '-' : '+' }}</div>
             </button>
         </div>
-        <div *ngIf="overviewOpen" class="absolute bottom-0 right-0">
+        <div *ngIf="overviewOpen" class="absolute bottom-0 right-0 -sm:hidden">
             <button class="btn-red">
-                <a [href]="applicationUrl" target="_blank" class="btn-underline">Bewerben →</a>
+                <a [href]="applicationUrl" target="_blank" class="btn-underline">Bewerben→</a>
             </button>
         </div>
+    </div>
+    <div *ngIf="overviewOpen" class="sm:hidden pt-5 flex justify-center">
+        <button class="btn-red">
+            <a [href]="applicationUrl" target="_blank" class="btn-underline">Bewerben→</a>
+        </button>
     </div>
 </div>

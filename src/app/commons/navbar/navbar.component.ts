@@ -17,16 +17,15 @@ export class NavbarComponent implements OnInit {
         this.router.events.subscribe((event) => {
             if (event instanceof NavigationEnd) {
                 if (this.isMenuOpen) {
-                    this.onMenuOpen(undefined);
+                    this.onMenuToggle();
                 }
             }
         });
     }
 
-    onMenuOpen(event: Event | undefined) {
+    onMenuToggle() {
         this.isMenuOpen = !this.isMenuOpen;
-        const tham = event?.currentTarget as HTMLElement;
-        tham.classList.toggle('tham-active');
+        document.querySelector('#tham')?.classList.toggle('tham-active');
         document.querySelector('#menu')?.classList.toggle('open');
     }
 }
