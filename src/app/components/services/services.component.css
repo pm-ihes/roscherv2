@@ -35,6 +35,12 @@
     position: relative;
 }
 
+@media (min-width: 1500px){
+    .slide {
+        margin: 0 5rem;
+    }
+} 
+
 .slide .slide-img img {
     width: 38rem;
     height: 42rem;

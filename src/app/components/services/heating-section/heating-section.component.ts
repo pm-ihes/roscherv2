@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Swiper } from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 @Component({
   selector: 'app-heating-section',
@@ -16,11 +16,15 @@ export class HeatingSectionComponent implements OnInit{
     //Erstellt Slider
     createSlider() {
         var heatingSlider = new Swiper('.heating-slider', {
-            modules: [Navigation],
+            modules: [Navigation, Autoplay],
             grabCursor: true,
             centeredSlides: true,
             loop: true,
             slidesPerView: 'auto',
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+              },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'

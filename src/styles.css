@@ -16,6 +16,15 @@
     --blue: #2C92D5;
     --green: #5fb643;
     --orange: #ff914d;
+    --swiper-navigation-size: 64px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10%;
+}
+
+@media (max-width: 1500px){
+    :root {
+        --swiper-navigation-sides-offset: 0;
+    }
 }
 
 ::-webkit-scrollbar {

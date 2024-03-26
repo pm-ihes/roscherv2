@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 
 @Component({
@@ -16,11 +16,15 @@ export class EeSectionComponent implements OnInit{
 
     createSlider(){
         var eeSlider = new Swiper('.ee-slider', {
-            modules: [Navigation],
+            modules: [Navigation, Autoplay],
             grabCursor: true,
             centeredSlides: true,
             loop: true,
             slidesPerView: 'auto',
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'

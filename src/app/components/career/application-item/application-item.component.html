@@ -1,10 +1,10 @@
-<div class="bg-white mx-auto shadow-gray-100 w-full max-w-4xl px-5 py-4 mb-5 rounded-md -md:max-w-[95vw]">
+<div class="bg-white mx-auto shadow-gray-100 w-full px-5 py-4 mb-5 rounded-md -md:max-w-[95vw]">
     <div class="flex flex-row gap-3 sm:items-center justify-between relative">
         <div>
             <h3 class="text font-bold mt-px pr-10">{{ title }}</h3>
             <div
                 [ngClass]="overviewOpen ? 'h-auto' : 'h-0'"
-                class="bg-white w-full max-w-4xl duration-300 ease-in overflow-hidden">
+                class="bg-white duration-300 ease-in overflow-hidden">
                 <ng-content></ng-content>
             </div>
             <div class="flex items-center gap-3 mt-2">
@@ -31,7 +31,7 @@
             <button
                 (click)="toggleOverview()"
                 class="text-[var(--accent)] text-xl font-medium px-4 py-2 rounded-md flex gap-1 items-center">
-                <div class="w-2">{{ overviewOpen ? '-' : '+' }}</div>
+                <div class="w-2 text-3xl">{{ overviewOpen ? '-' : '+' }}</div>
             </button>
         </div>
         <div *ngIf="overviewOpen" class="absolute bottom-0 right-0 -sm:hidden">

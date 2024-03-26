@@ -1,5 +1,5 @@
 <div class="top w-screen bg-[var(--dark-gray)] py-5">
-    <h1 class="heading text-center text-white">
+    <h1 class="heading-xs text-center text-white">
         Tradition seit
         <span class="text-[var(--red)]">1804</span>
     </h1>
@@ -8,16 +8,16 @@
 <div class="w-screen h-[70vh] relative overflow-hidden">
     <img src="assets/images/about_top.png" alt="Bild Roscher GmbH Hainichen" class="h-full w-full object-cover blur-sm" />
     <div class="absolute top-0 left-0 w-full h-full bg-gray-800/40"></div>
-    <div class="absolute md:top-1/4 -md:top-[10%] left-[10vw] w-[80vw] text-center">
-        <h2 class="heading-xs -sm:text-xl text-white">
+    <div class="absolute top-1/2 -translate-y-1/2 left-[10vw] w-[80vw] text-center">
+        <h2 class="lg:text-4xl text-3xl -sm:text-xl text-white">
             “[...] Eigentlich gibt es die Firma Roscher in Hainichen sogar schon fast 220 Jahre. Damit dürfte es sich um die
             älteste durchgängig bestehende Firma in unserer Stadt überhaupt handeln. [...]"
         </h2>
-        <p class="text -sm:text-lg text-white">~ Oberbürgermeister Dieter Greysinger, 2022 ~</p>
+        <p class="text-2xl lg:text-3xl -sm:text-lg text-white pt-4">~ Oberbürgermeister Dieter Greysinger, 2022 ~</p>
     </div>
 </div>
 
-<div #hSection class="w-full">
+<div #hSection class="w-full bg-[var(--gray)] md:px-10 lg:px-32">
     <div class="sm:w-5/6 mx-auto pt-10">
         <div class="pb-5">
             <p class="text text-center -sm:px-5">
@@ -35,17 +35,179 @@
                 </div>
             </div>
             <div
-                class="strahl sm:w-2/3 sm:h-max -sm:w-[75vw] border-l-2 border-[var(--red)] flex justify-center py-3 relative">
+                class="strahl lg:pb-10 sm:w-2/3 sm:h-max -sm:w-[75vw] border-l-2 border-[var(--red)] flex justify-center py-3 relative">
                 <div
                     class="pointer absolute top-1/2 left-0 -translate-x-[calc(50%+1px)] -translate-y-1/2 rounded-full h-5 w-5 bg-white border-2 border-red-600"></div>
                 <div class="-sm:w-[80%] sm:w-[90%]">
                     <div class="sm:pr-4">
                         <p class="heading-mini -sm:leading-6 -sm:pb-2">{{ item.title }}</p>
                         <li *ngFor="let text of item.texts" class="text-xl -sm:text-sm -sm:leading-4 -sm:pb-2">{{ text }}</li>
-                        <img *ngIf="item.imgSrc" [src]="item.imgSrc" alt="" class="sm:w-1/2 pt-5 ">
+                        <img *ngIf="item.imgSrc" [src]="item.imgSrc" alt="" class="sm:w-1/2 pt-5" loading="lazy">
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white p-10 lg:px-32 -sm:p-5">
+    <div class="text-center pb-5">
+        <h1 class="heading-xs uppercase underline">Unsere Partner</h1>
+    </div>
+
+    <div class="containerS">
+        <div class="swiper partner-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img" id="first">
+                        <img src="../../../../assets/partners/engineers_green_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/arbonia_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/bwt_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/eta_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/geberit_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/grohe_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/helios_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/hsk_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/idealstandard_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/judo_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/keramag_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img" id="first">
+                        <img src="../../../../assets/partners/kermi_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/keuco_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/meltem_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/paradigma_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/vaillant_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/viega_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/viessmann_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/weishaupt_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/zeeh_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide partner-slide">
+                    <div class="partner-slide-img">
+                        <img src="../../../../assets/partners/zehnder_logo.png" alt="partner" />
+                    </div>
+                </div>
+                <!-- Slide-end -->
+            </div>
+
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
