@@ -11,35 +11,35 @@
                         <!-- Slide-start -->
                         <div class="swiper-slide slide">
                             <div class="slide-img">
-                                <img src="assets/images/sanitary_1.png" alt="Bild Bad 1" />
+                                <img src="assets/images/sanitary_1.png" alt="Bild Bad 1" loading="lazy" />
                             </div>
                         </div>
                         <!-- Slide-end -->
                         <!-- Slide-start -->
                         <div class="swiper-slide slide">
                             <div class="slide-img">
-                                <img src="assets/images/sanitary_2.png" alt="Bild Bad 2" />
+                                <img src="assets/images/sanitary_2.png" alt="Bild Bad 2" loading="lazy" />
                             </div>
                         </div>
                         <!-- Slide-end -->
                         <!-- Slide-start -->
                         <div class="swiper-slide slide">
                             <div class="slide-img">
-                                <img src="assets/images/sanitary_3.png" alt="Bild Bad 3" />
+                                <img src="assets/images/sanitary_3.png" alt="Bild Bad 3" loading="lazy" />
                             </div>
                         </div>
                         <!-- Slide-end -->
                         <!-- Slide-start -->
                         <div class="swiper-slide slide">
                             <div class="slide-img">
-                                <img src="assets/images/sanitary_4.png" alt="Bild Bad 4" />
+                                <img src="assets/images/sanitary_4.png" alt="Bild Bad 4" loading="lazy" />
                             </div>
                         </div>
                         <!-- Slide-end -->
                         <!-- Slide-start -->
                         <div class="swiper-slide slide">
                             <div class="slide-img">
-                                <img src="assets/images/sanitary_5.png" alt="Bild Bad 5" />
+                                <img src="assets/images/sanitary_5.png" alt="Bild Bad 5" loading="lazy" />
                             </div>
                         </div>
                         <!-- Slide-end -->
@@ -77,7 +77,7 @@
 <div class="-md:hidden bg-image w-screen h-[70vh]"></div>
 
 <div class="md:hidden">
-    <img src="assets/images/sanitary_bath_top.png" alt="Bild Bad" class="w-screen h-[70vh] object-cover bg-fixed" />
+    <img src="assets/images/sanitary_bath_top.png" alt="Bild Bad" class="w-screen h-[70vh] object-cover bg-fixed" loading="lazy" />
 </div>
 
 <!--Section Bad-->
@@ -92,7 +92,7 @@
     </div>
     <div class="flex -md:flex-col justify-around pt-5">
         <div class="md:w-2/5 p-3 text-center bg-gray-200 rounded-md -md:mb-5">
-            <img src="assets/icons/hand_settings.svg" alt="Icon Hand mit Zahnrad" class="w-20 mx-auto" />
+            <img src="assets/icons/hand_settings.svg" alt="Icon Hand mit Zahnrad" class="w-20 mx-auto" loading="lazy" />
             <p class="text-xl underline uppercase py-3">Unsere Leistungen für Ihr Bad:</p>
             <div class="flex justify-center">
                 <ul class="text-left text-xl">
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="md:w-2/5 p-3 bg-green-400/65 rounded-md">
-            <img src="assets/icons/idea.svg" alt="Icon Hand mit Zahnrad" class="w-20 mx-auto" />
+            <img src="assets/icons/idea.svg" alt="Icon Hand mit Zahnrad" class="w-20 mx-auto" loading="lazy" />
             <p class="text-xl underline uppercase py-3">5 allgemiene Tipps, worauf wir bei der Planung achten:</p>
             <ol class="text-left text-xl list-decimal list-outside pl-4">
                 <li class="mb-2">Bestandsaufnahme, Grundriss und Raumaufteilung vom Badezimmer inklusive Fenster, Tür und Wasseranschlüsse.</li>
@@ -142,7 +142,7 @@
     </div>
     <div *ngIf="!isMobile" class="w-full sm:h-96 lg:h-[620px] sm:flex justify-center gap-4">
         <div *ngFor="let card of cards; index as i" class="card relative" (mouseenter)="addActive($event)">
-            <img [src]="card.image" alt="" />
+            <img [src]="card.image" alt="" loading="lazy" />
             <div class="absolute bottom-0 bg-[var(--dark-gray)] w-full h-10 z-10 ease-in duration-100" [ngClass]="{ menu: menuOpened[i] }">
                 <div class="tham tham-e-squeeze tham-w-6 mx-auto pt-4" (click)="toggleMenu($event, i)">
                     <div class="tham-box">
@@ -160,7 +160,7 @@
 
     <div *ngIf="isMobile" class="w-full flex flex-col">
         <div *ngFor="let card of cards; index as i" class="aos-animate aos-init w-[90%] mx-auto mb-6" data-aos="fade-up" data-aos-duration="1000">
-            <img [src]="card.image" alt="" class="rounded-t-xl h-[400px] w-full object-cover" />
+            <img [src]="card.image" alt="" class="rounded-t-xl h-[400px] w-full object-cover" loading="lazy" />
             <div class="bg-[var(--dark-gray)] w-full z-10 ease-in duration-100">
                 <ul class="pl-4 text-left text-white py-4">
                     <li *ngFor="let note of card.notes; index as i">{{ card.notes[i] }}</li>
@@ -180,7 +180,7 @@
             <p class="text-2xl lg:text-3xl underline uppercase py-3">Ihre Vorteile</p>
             <div class="md:h-[90%] flex flex-col justify-around -md:gap-4">
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">
                         bis zu
                         <span class="text-[var(--green)] font-extrabold">4000€</span>
@@ -188,40 +188,63 @@
                     </p>
                 </div>
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">Zukunftsicherheit</p>
                 </div>
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">maximaler Komfort</p>
                 </div>
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">praktisch und ästhetisch</p>
                 </div>
             </div>
         </div>
 
         <div class="md:w-2/5 -md:mb-5">
-            <img
-                src="assets/images/sanitary_bath_wheelchair.png"
-                alt="Bad barrierefrei"
-                class="sm:h-full sm:object-cover -sm:w-full -sm:rounded-md" />
+            <div class="swiper bath-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide slide">
+                        <div class="slide-img">
+                            <img src="assets/images/sanitary_bath_wheelchair.png" alt="Bild Bad 1" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide slide">
+                        <div class="slide-img">
+                            <img src="assets/images/sanitary_bath_wheelchair_2.jpeg" alt="Bild Bad 2" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide slide">
+                        <div class="slide-img">
+                            <img src="assets/images/sanitary_bath_wheelchair_3.jpg" alt="Bild Bad 3" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
 
         <div class="md:w-1/5 p-3 bg-gray-200 rounded-md -md:mb-5">
             <p class="text-2xl lg:text-3xl underline uppercase py-3">Unsere Leistungen</p>
             <div class="md:h-[90%] flex flex-col justify-around -md:gap-4">
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">Badewannenlift</p>
                 </div>
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">Wanne zur Dusche umfunktionieren</p>
                 </div>
                 <div>
-                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" />
+                    <img src="assets/icons/green_check.png" alt="Icon Haken" class="w-16 mx-auto" loading="lazy" />
                     <p class="text-xl">Dusche durch eine barrierefreie Dusche ersetzen</p>
                 </div>
             </div>

@@ -28,7 +28,19 @@ export class SanitarySectionComponent implements OnInit {
 
     //Erstellt Slider
     createSlider() {
-        var heatingSlider = new Swiper('.sanitary-slider', {
+        var sanitarySlider = new Swiper('.sanitary-slider', {
+            modules: [Navigation],
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+
+        var bathSlider = new Swiper('.bath-slider', {
             modules: [Navigation],
             grabCursor: true,
             centeredSlides: true,
