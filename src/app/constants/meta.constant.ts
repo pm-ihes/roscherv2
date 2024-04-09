@@ -1,2 +1,2 @@
-export const CONTACT_URL: string = 'https://kontakt-shkroscher.de/contact';
-export const APPLICATION_URL: string = 'https://kontakt-shkroscher.de/';
+export const CONTACT_URL: string = 'https://pmdevpm.de/contact/contact';
+export const APPLICATION_URL: string = 'https://pmdevpm.de/contact/application';
