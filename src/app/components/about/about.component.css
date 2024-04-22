@@ -3,7 +3,7 @@
 }
 
 .active .pointer {
-    background: var(--red) !important;
+    background: black !important;
 }
 
 .eventBox li {
@@ -20,7 +20,7 @@
 }
 
 .active p {
-    color: var(--red);
+    color: black;
 }
 
 .eventBox p,
@@ -31,7 +31,7 @@
 
 .eventBox:last-child .strahl {
     border-left: 2px solid;
-    border-image: linear-gradient(180deg, rgba(255, 87, 87, 1) 0%, rgba(255, 87, 87, 1) 30%, rgba(255, 87, 87, 0.1685267857142857) 100%) 1;
+    border-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(65, 65, 65) 30%, rgba(110, 110, 110, 0.169) 100%) 1;
 }
 
 .containerPartner {
