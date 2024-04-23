@@ -25,7 +25,6 @@ import { EeSectionComponent } from './components/roscher-services/ee-section/ee-
 import { SanitarySectionComponent } from './components/roscher-services/sanitary-section/sanitary-section.component';
 import { AirConditionerSectionComponent } from './components/roscher-services/air-conditioner-section/air-conditioner-section.component';
 import { ScrollUpButtonComponent } from './commons/components/scroll-up-button/scroll-up-button.component';
-import { HaverieModalComponent } from './commons/components/haverie-modal/haverie-modal.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +49,7 @@ import { HaverieModalComponent } from './commons/components/haverie-modal/haveri
     EeSectionComponent,
     SanitarySectionComponent,
     AirConditionerSectionComponent,
-    ScrollUpButtonComponent,
-    HaverieModalComponent
+    ScrollUpButtonComponent
   ],
   imports: [
     BrowserModule,

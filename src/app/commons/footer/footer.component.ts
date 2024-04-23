@@ -15,7 +15,7 @@ export class FooterComponent {
     contactUrl: string = CONTACT_URL;
     applicationUrl: string = APPLICATION_URL;
 
-    OnInit() {
-        const dialogRef = this.dialog.open(HaverieModalComponent);
+    open(){
+        this.dialog.open(HaverieModalComponent);
     }
 }
