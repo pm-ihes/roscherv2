@@ -19,11 +19,12 @@ import { Job2Component } from './components/career/job-2/job-2.component';
 import { Job3Component } from './components/career/job-3/job-3.component';
 import { ImprintComponent } from './commons/imprint/imprint.component';
 import { PrivacyComponent } from './commons/privacy/privacy.component';
-import { ServicesComponent } from './components/services/services.component';
-import { HeatingSectionComponent } from './components/services/heating-section/heating-section.component';
-import { EeSectionComponent } from './components/services/ee-section/ee-section.component';
-import { SanitarySectionComponent } from './components/services/sanitary-section/sanitary-section.component';
-import { AirConditionerSectionComponent } from './components/services/air-conditioner-section/air-conditioner-section.component';
+import { RoscherServicesComponent } from './components/roscher-services/roscher-services.component';
+import { HeatingSectionComponent } from './components/roscher-services/heating-section/heating-section.component';
+import { EeSectionComponent } from './components/roscher-services/ee-section/ee-section.component';
+import { SanitarySectionComponent } from './components/roscher-services/sanitary-section/sanitary-section.component';
+import { AirConditionerSectionComponent } from './components/roscher-services/air-conditioner-section/air-conditioner-section.component';
+import { ScrollUpButtonComponent } from './commons/components/scroll-up-button/scroll-up-button.component';
 
 @NgModule({
   declarations: [
@@ -43,11 +44,12 @@ import { AirConditionerSectionComponent } from './components/services/air-condit
     Job3Component,
     ImprintComponent,
     PrivacyComponent,
-    ServicesComponent,
+    RoscherServicesComponent,
     HeatingSectionComponent,
     EeSectionComponent,
     SanitarySectionComponent,
-    AirConditionerSectionComponent
+    AirConditionerSectionComponent,
+    ScrollUpButtonComponent
   ],
   imports: [
     BrowserModule,

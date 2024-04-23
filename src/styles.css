@@ -6,9 +6,9 @@
 
 
 @font-face {
-    font-family: 'San Francisco';
+    font-family: 'Poppins';
     font-weight: 400;
-    src: url('assets/fonts/SF-Pro-Text-Regular.otf');
+    src: url('assets/fonts/Poppins-Medium.ttf');
 }
 
 :root {
@@ -51,7 +51,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'San Francisco';
+    font-family: 'Poppins';
     overflow-x: hidden;
     height: 100%;
     width: 100vw;
